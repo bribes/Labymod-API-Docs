@@ -256,3 +256,170 @@ GET /groups.json
 **Endpoint:** `/capes/:dashed_uuid`
 
 **Description:** This returns an image of a users LabyMod cape.
+
+
+## Get List of LabyMod Server Groups
+**Subdomain:** `https://dl.labymod.net/`
+
+**Endpoint:** `GET /server_groups.json`
+
+**Description:** This returns a list of every LabyMod Server group.
+
+**Request:**
+```http
+GET /server_groups.json
+```
+
+**Response:**
+```json
+{
+  "server_groups": {
+    "timolia": {
+      "server_name": "timolia",
+      "nice_name": "Timolia",
+      "direct_ip": "play.timolia.de",
+      "wildcards": [
+        "%.timolia.de"
+      ],
+      "attachments": [
+        {
+          "file_name": "background.png",
+          "url": "https://dl.labymod.net/img/server/timolia/background.png",
+          "hash": "755ee9fd241921bedc0279986f4b0c50"
+        },
+        {
+          "file_name": "background.webp",
+          "url": "https://dl.labymod.net/img/server/timolia/background.webp",
+          "hash": "b677cdc0cd2d6f877a72a0a6fb6095c9"
+        },
+        {
+          "file_name": "background@2x.png",
+          "url": "https://dl.labymod.net/img/server/timolia/background@2x.png",
+          "hash": "943f4516c38e4dc054db7a32126c0e36"
+        },
+        {
+          "file_name": "background@2x.webp",
+          "url": "https://dl.labymod.net/img/server/timolia/background@2x.webp",
+          "hash": "10cfbd430fcb3f8c7e7391f7a8ba71d3"
+        },
+        {
+          "file_name": "banner.png",
+          "url": "https://dl.labymod.net/img/server/timolia/banner.png",
+          "hash": "289b7bff8ecc8879e23f676ef2524465"
+        },
+        {
+          "file_name": "banner.webp",
+          "url": "https://dl.labymod.net/img/server/timolia/banner.webp",
+          "hash": "2eb71b4f3e27f3026137a6d1faed1332"
+        },
+        {
+          "file_name": "icon.png",
+          "url": "https://dl.labymod.net/img/server/timolia/icon.png",
+          "hash": "e3dcfd2748b10d124bcc7a8aeeeca07b"
+        },
+        {
+          "file_name": "icon.webp",
+          "url": "https://dl.labymod.net/img/server/timolia/icon.webp",
+          "hash": "fa935d1cd9443261886a06a1a15d28c2"
+        },
+        {
+          "file_name": "icon@2x.png",
+          "url": "https://dl.labymod.net/img/server/timolia/icon@2x.png",
+          "hash": "507e37715b1a823ccc4d826ff118367a"
+        },
+        {
+          "file_name": "icon@2x.webp",
+          "url": "https://dl.labymod.net/img/server/timolia/icon@2x.webp",
+          "hash": "34ad6c4d676bff210794b09391ae4fe8"
+        },
+        {
+          "file_name": "logo.png",
+          "url": "https://dl.labymod.net/img/server/timolia/logo.png",
+          "hash": "e3dcfd2748b10d124bcc7a8aeeeca07b"
+        },
+        {
+          "file_name": "logo@2x.png",
+          "url": "https://dl.labymod.net/img/server/timolia/logo@2x.png",
+          "hash": "507e37715b1a823ccc4d826ff118367a"
+        },
+        {
+          "file_name": "manifest.json",
+          "url": "https://dl.labymod.net/img/server/timolia/manifest.json",
+          "hash": "22324ed62c01642e1f59627dca634fe8"
+        }
+      ],
+      "social": {
+        "web": "https://timolia.de",
+        "web_shop": "https://shop.timolia.de",
+        "twitter": "TimoliaTeam",
+        "discord": "https://discord.gg/Q55FujN",
+        "tiktok": "timolianetwork",
+        "youtube": "https://www.youtube.com/Timolia",
+        "instagram": "timolianetwork"
+      },
+      "gamemodes": {
+        "jumpworld": {
+          "name": "JumpWorld",
+          "command": "/quickjoin jumpworld",
+          "url": "https://www.timolia.de/games#jumpworld",
+          "color": "#0095B0",
+          "versions": "1.20<*"
+        },
+        "pvp": {
+          "name": "1vs1",
+          "command": "/quickjoin pvp",
+          "url": "https://www.timolia.de/games#pvp",
+          "color": "#0095B0"
+        },
+        "freebuild": {
+          "name": "Freebuild",
+          "command": "/quickjoin freebuild",
+          "url": "https://www.timolia.de/games#freebuild",
+          "color": "#0095B0",
+          "versions": "1.20<*"
+        },
+        "brainbow": {
+          "name": "BrainBow",
+          "command": "/quickjoin brainbow",
+          "url": "https://howto.timolia.de/games/brainbow/",
+          "color": "#0095B0"
+        },
+        "4rena": {
+          "name": "4rena",
+          "command": "/quickjoin 4rena",
+          "url": "https://www.timolia.de/games#4rena",
+          "color": "#0095B0"
+        },
+        "castles": {
+          "name": "Castles",
+          "command": "/quickjoin castles",
+          "url": "https://www.timolia.de/games#castles",
+          "color": "#0095B0"
+        },
+        "survivalquest": {
+          "name": "SurvivalQuest",
+          "command": "/quickjoin survivalquest",
+          "url": "https://www.timolia.de/games#survivalquest",
+          "color": "#0095B0",
+          "versions": "1.16.5<*"
+        },
+        "splun": {
+          "name": "Splun",
+          "command": "/quickjoin splun",
+          "url": "https://www.timolia.de/games#splun",
+          "color": "#0095B0",
+          "versions": "1.20<*"
+        }
+      },
+      "chat": {
+        "message_formats": [
+          "^\u00a7[a-f0-9](?<level>\\d+)( \\||\u00a78 \\|) \u00a7[a-f0-9](?<sender>[a-zA-Z0-9_]{2,16})\u00a7r\u00a77: \u00a7f(?<message>.*)$"
+        ]
+      },
+      "user_stats": "https://www.timolia.de/stats/{userName}"
+    }
+    ...
+  }
+}
+
+```
